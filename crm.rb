@@ -18,6 +18,10 @@ get '/about' do
   erb :about
 end
 
+get '/contacts/new' do
+  erb :add_contact
+end
+
 get '/contacts/:id' do
   @contacts = Contact.all
   @contact = Contact.find_by(id: params[:id].to_i)
