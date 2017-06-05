@@ -2,11 +2,13 @@ require_relative 'contact'
 require 'sinatra'
 
 get '/' do
-  erb :index
+  @contacts = Contact.all
+  redirect to('/contacts')
 end
 
 get '/home' do
-  redirect to('/')
+  @contacts = Contact.all
+  redirect to('/contacts')
 end
 
 get '/about' do
@@ -23,7 +25,7 @@ get '/contacts/new' do
 end
 
 post '/contacts' do
-  puts params   #show hash/string
+  # puts params   #show hash/string
   Contact.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], note: params[:note])
   redirect to('/contacts')
 end

@@ -60,3 +60,18 @@ footer {
   margin-top: 15px;
   list-style-type: none;
 }
+
+input[type=submit] {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: bold
+  color: rgb(0, 0, 238);
+  padding-left: 0;
+}
+
+input[type=submit]:active {
+  color: red;
+}
