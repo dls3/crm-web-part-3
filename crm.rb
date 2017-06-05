@@ -25,8 +25,12 @@ get '/contacts/new' do
 end
 
 post '/contacts' do
-  # puts params   #show hash/string
-  Contact.create(first_name: params[:first_name], last_name: params[:last_name], email: params[:email], note: params[:note])
+  Contact.create(
+  first_name: params[:first_name],
+  last_name:  params[:last_name],
+  email:      params[:email],
+  note:       params[:note]
+  )
   redirect to('/contacts')
 end
 
@@ -49,7 +53,6 @@ put '/contacts/:id' do
     email:      params[:email],
     note:       params[:note]
     )
-
     redirect to('/contacts')
   else
     raise Sinatra::NotFound

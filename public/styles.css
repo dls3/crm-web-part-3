@@ -48,19 +48,22 @@ ul {
 
 .number {
   font-weight: bold;
-  border-bottom: solid #5CF2CA;
+  border-bottom: solid #B2E6F0;
+  /*#5CF2CA;*/
 }
 
 .mycontacts {
   font-size: 18px;
-  background-color: #FFA07A;
+  background-color: #81A7AD;
+  /*#FFA07A;*/
   font-weight: 500;
   padding: 18px;
   font-weight: bold;
 }
 
 .contacts {
-  background-color: #5CF2CA;
+  background-color: #B2E6F0;
+  /*#5CF2CA;*/
   padding: 22px;
   margin-top: 15px;
   font-weight: bold;
