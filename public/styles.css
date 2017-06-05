@@ -34,6 +34,7 @@ footer {
   text-align: center;
   padding: 10px;
   margin: 1px;
+  list-style-type: none;
 }
 
 .link {
@@ -57,4 +58,5 @@ footer {
   background-color: #5CF2CA;
   padding: 22px;
   margin-top: 15px;
+  list-style-type: none;
 }
